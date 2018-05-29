@@ -23,7 +23,7 @@ class EmotionViewController: UIViewController {
         Emotion.happy : ["Excited", "Playful", "Confident", "Peaceful", "Energetic"],
         Emotion.sad : ["Lonely", "Ashamed", "Discouraged", "Hurt", "Inferior"],
         Emotion.angry : ["Irritated", "Offended", "Frustrated", "Aggressive", "Resentful"],
-        Emotion.fear : ["Anxious", "Overwhelemed", "Unsure", "Insecure", "Frightened"],
+        Emotion.fear : ["Anxious", "Alienated", "Unsure", "Insecure", "Frightened"],
         Emotion.neutral : ["Empty", "Bored", "Apathetic", "Indifferent", "Ambivalent"]
     ]
     
@@ -61,15 +61,16 @@ class EmotionViewController: UIViewController {
         }
     }
     
-    
-    /*
+
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        if let viewController = segue.destination as? DiaryViewController {
+            viewController.view.backgroundColor = self.view.backgroundColor
+        }
     }
-    */
 
 }
