@@ -19,10 +19,12 @@ class EmotionViewController: UIViewController {
     @IBOutlet weak var currentEmotionLabel: UILabel!
     @IBOutlet weak var nextButton: UIButton!
     
-    // fill in later
     let emotionDict = [
         Emotion.happy : ["Excited", "Playful", "Confident", "Peaceful", "Energetic"],
-        Emotion.sad : []
+        Emotion.sad : ["Lonely", "Ashamed", "Discouraged", "Hurt", "Inferior"],
+        Emotion.angry : ["Irritated", "Offended", "Frustrated", "Aggressive", "Resentful"],
+        Emotion.fear : ["Anxious", "Overwhelemed", "Unsure", "Insecure", "Frightened"],
+        Emotion.neutral : ["Empty", "Bored", "Apathetic", "Indifferent", "Ambivalent"]
     ]
     
      var selectedEmotion : Emotion = Emotion.notset

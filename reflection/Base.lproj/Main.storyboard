@@ -122,7 +122,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h0y-4A-4r3">
-                                <rect key="frame" x="197" y="0.0" width="178" height="194"/>
+                                <rect key="frame" x="197" y="0.0" width="178" height="218"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="sadTapped:" destination="A04-jX-rwR" eventType="touchUpInside" id="mNh-3o-NGR"/>
@@ -130,7 +130,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Aq-rq-dmg">
-                                <rect key="frame" x="0.0" y="473" width="178" height="194"/>
+                                <rect key="frame" x="0.0" y="442" width="178" height="225"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="fearTapped:" destination="A04-jX-rwR" eventType="touchUpInside" id="GwI-gW-ce7"/>
@@ -138,7 +138,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rxm-yZ-wzQ">
-                                <rect key="frame" x="190" y="473" width="178" height="194"/>
+                                <rect key="frame" x="190" y="442" width="178" height="225"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="happyTapped:" destination="A04-jX-rwR" eventType="touchUpInside" id="nBq-Ny-S2f"/>
@@ -146,7 +146,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NUo-Ac-smP">
-                                <rect key="frame" x="0.0" y="-1" width="178" height="194"/>
+                                <rect key="frame" x="0.0" y="-1" width="178" height="224"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="angryTapped:" destination="A04-jX-rwR" eventType="touchUpInside" id="SWq-3I-eFL"/>
