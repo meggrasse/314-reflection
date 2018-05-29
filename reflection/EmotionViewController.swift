@@ -27,7 +27,7 @@ class EmotionViewController: UIViewController {
         Emotion.neutral : ["Empty", "Bored", "Apathetic", "Indifferent", "Ambivalent"]
     ]
     
-     var selectedEmotion : Emotion = Emotion.notset
+    var selectedEmotion : Emotion = Emotion.notset
 
     override func viewDidLoad() {
         super.viewDidLoad()

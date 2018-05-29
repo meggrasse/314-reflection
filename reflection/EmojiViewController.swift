@@ -24,28 +24,30 @@ class EmojiViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func angryTapped(_ sender: Any) {
+    // TODO: figure out why never called
+    @IBAction func emojiSadTapped(_ sender: Any) {
+        selectedEmotion = Emotion.sad
+        print (selectedEmotion)
+        destinationBackgroundColor = UIColor.init(red: 116 / 255.0, green: 185 / 255.0, blue: 255 / 255.0, alpha: 1)
+    }
+    
+    @IBAction func emojiAngryTapped(_ sender: Any) {
+        
         selectedEmotion = Emotion.angry
         destinationBackgroundColor = UIColor.init(red: 255 / 255.0 , green: 118 / 255.0, blue: 117 / 255.0, alpha: 1)
     }
 
-    // TODO: figure out why never called
-    @IBAction func sadTapped(_ sender: Any) {
-        selectedEmotion = Emotion.sad
-        destinationBackgroundColor = UIColor.init(red: 116 / 255.0, green: 185 / 255.0, blue: 255 / 255.0, alpha: 1)
-    }
-    
-    @IBAction func neutralTapped(_ sender: Any) {
+    @IBAction func emojiNeutralTapped(_ sender: Any) {
         selectedEmotion = Emotion.neutral
         destinationBackgroundColor = UIColor.init(red: 181 / 255.0, green: 181 / 255.0, blue: 181 / 255.0, alpha: 1)
     }
     
-    @IBAction func fearTapped(_ sender: Any) {
+    @IBAction func emojiFearTapped(_ sender: Any) {
         selectedEmotion = Emotion.fear
         destinationBackgroundColor = UIColor.init(red: 162 / 255.0, green: 155 / 255.0, blue: 254 / 255.0, alpha: 1)
     }
     
-    @IBAction func happyTapped(_ sender: Any) {
+    @IBAction func emojiHappyTapped(_ sender: Any) {
         selectedEmotion = Emotion.happy
         destinationBackgroundColor = UIColor.init(red: 253 / 255.0, green: 203 / 255.0, blue: 110 / 255.0, alpha: 1)
     }
