@@ -9,16 +9,12 @@
 import UIKit
 
 class EmojiViewController: UIViewController {
-
-    @IBOutlet weak var backgroundImage: UIImageView!
     
     var selectedEmotion : Emotion = Emotion.notset
     var destinationBackgroundColor : UIColor = UIColor.white
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        backgroundImage.image = #imageLiteral(resourceName: "background")
 
         // Do any additional setup after loading the view.
     }
