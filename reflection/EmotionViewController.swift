@@ -19,14 +19,22 @@ class EmotionViewController: UIViewController {
     @IBOutlet weak var currentEmotionLabel: UILabel!
     @IBOutlet weak var nextButton: UIButton!
     
-    let happyEmotions = ["Excited", "Playful", "Confident", "Peaceful", "Energetic"]
+    // fill in later
+    let emotionDict = [
+        Emotion.happy : ["Excited", "Playful", "Confident", "Peaceful", "Energetic"],
+        Emotion.sad : []
+    ]
+    
+     var selectedEmotion : Emotion = Emotion.notset
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         let emotionButtons = [button1, button2, button3, button4, button5]
-
-        populateButtonText(happyEmotions, emotionButtons)
+        
+        if let emotions = emotionDict[selectedEmotion] {
+            populateButtonText(emotions, emotionButtons)
+        }
 
         // Do any additional setup after loading the view.
     }
