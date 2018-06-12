@@ -12,6 +12,7 @@ class EmojiViewController: UIViewController {
     
     var selectedEmotion : Emotion = Emotion.notset
     var destinationBackgroundColor : UIColor = UIColor.white
+    var entry : String =  ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -59,6 +60,7 @@ class EmojiViewController: UIViewController {
         if let viewController = segue.destination as? EmotionViewController {
             viewController.selectedEmotion = selectedEmotion
             viewController.view.backgroundColor = destinationBackgroundColor
+            viewController.entry = entry
         }
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.

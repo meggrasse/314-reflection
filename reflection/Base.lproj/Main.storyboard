@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3QV-af-hVO">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3QV-af-hVO">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -69,7 +69,7 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Jh0-B8-y6X" kind="show" id="HsV-mu-2bd"/>
+                                    <segue destination="Jh0-B8-y6X" kind="show" id="oge-Cf-RsK"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dny-S1-k5i">
@@ -158,23 +158,54 @@
                                     <segue destination="BYZ-38-t0r" kind="show" id="wvA-77-gVO"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SK9-oJ-IZV">
-                                <rect key="frame" x="152" y="348" width="71" height="47"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pxH-G5-1Wf">
+                                <rect key="frame" x="38" y="351" width="120" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <state key="normal" title="👌"/>
+                                <state key="normal" title="Edit my mood" backgroundImage="button">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
-                                    <segue destination="oAc-4c-4dL" kind="show" id="wyc-fL-hLl"/>
+                                    <action selector="populateCurrentEmotionLabel:" destination="BYZ-38-t0r" eventType="touchUpInside" id="S4d-pn-7lP"/>
+                                    <segue destination="A04-jX-rwR" kind="show" id="Zb9-qL-DuQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lWv-hC-XNh">
+                                <rect key="frame" x="244" y="358" width="30" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="⇨">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="oAc-4c-4dL" kind="show" id="4a4-s6-eNi"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="PEv-09-JLJ"/>
                     </view>
+                    <connections>
+                        <outlet property="entryBox" destination="w0W-Qx-qYA" id="0Uv-tG-5FX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PDW-Hy-CYQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="944.79999999999995" y="33.733133433283363"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="gaZ-Lm-pBz">
+            <objects>
+                <viewController id="RnN-29-lrh" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KeT-00-yIJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="MQ1-HN-wN4"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nYW-qJ-Cw7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1798" y="36"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="M3h-Yz-XOb">
@@ -280,7 +311,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ERy-AW-wGb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-855.20000000000005" y="33.733133433283363"/>
+            <point key="canvasLocation" x="-801" y="34"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="GCX-P0-C9C">
@@ -361,9 +392,10 @@
         <image name="entry" width="750" height="1334"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="wyc-fL-hLl"/>
+        <segue reference="oge-Cf-RsK"/>
+        <segue reference="4a4-s6-eNi"/>
         <segue reference="7ac-3C-LE0"/>
-        <segue reference="bsJ-rR-F9z"/>
+        <segue reference="fWl-B6-3fl"/>
         <segue reference="wvA-77-gVO"/>
     </inferredMetricsTieBreakers>
 </document>

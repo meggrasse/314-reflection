@@ -28,7 +28,8 @@ class EmotionViewController: UIViewController {
     ]
     
     var selectedEmotion : Emotion = Emotion.notset
-
+    var entry : String = ""
+ 
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -61,7 +62,6 @@ class EmotionViewController: UIViewController {
         }
     }
     
-
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -70,6 +70,7 @@ class EmotionViewController: UIViewController {
         // Pass the selected object to the new view controller.
         if let viewController = segue.destination as? DiaryViewController {
             viewController.view.backgroundColor = self.view.backgroundColor
+            viewController.entry = entry
         }
     }
 
