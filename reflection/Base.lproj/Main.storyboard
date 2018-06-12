@@ -282,7 +282,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NUo-Ac-smP">
-                                <rect key="frame" x="0.0" y="-1" width="178" height="224"/>
+                                <rect key="frame" x="0.0" y="47" width="178" height="176"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="emojiAngryTapped:" destination="A04-jX-rwR" eventType="touchUpInside" id="JCt-gT-kSl"/>
@@ -290,7 +290,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qzy-Yn-0DC">
-                                <rect key="frame" x="190" y="7" width="178" height="224"/>
+                                <rect key="frame" x="190" y="47" width="178" height="184"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="emojiSadTapped:" destination="A04-jX-rwR" eventType="touchUpInside" id="jOc-mT-zpL"/>
@@ -298,7 +298,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EnG-St-tK9">
-                                <rect key="frame" x="0.0" y="7" width="30" height="36"/>
+                                <rect key="frame" x="0.0" y="20" width="30" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="⇦">
@@ -547,7 +547,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="background" width="750" height="1334"/>
+        <image name="background" width="2308" height="4096"/>
         <image name="button" width="602" height="279"/>
         <image name="calendar" width="750" height="1335"/>
         <image name="home" width="1151" height="2048"/>
@@ -558,10 +558,9 @@
         <image name="may30" width="2308" height="4096"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="oge-Cf-RsK"/>
         <segue reference="rTF-62-3lM"/>
         <segue reference="7ac-3C-LE0"/>
-        <segue reference="fWl-B6-3fl"/>
-        <segue reference="wvA-77-gVO"/>
+        <segue reference="bsJ-rR-F9z"/>
+        <segue reference="25t-XG-Uby"/>
     </inferredMetricsTieBreakers>
 </document>
