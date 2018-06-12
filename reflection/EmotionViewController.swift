@@ -24,7 +24,7 @@ class EmotionViewController: UIViewController, UITextFieldDelegate {
         Emotion.sad : ["Lonely", "Ashamed", "Discouraged", "Hurt", "Inferior"],
         Emotion.angry : ["Irritated", "Offended", "Frustrated", "Aggressive", "Resentful"],
         Emotion.fear : ["Anxious", "Alienated", "Unsure", "Insecure", "Frightened"],
-        Emotion.neutral : ["Empty", "Bored", "Apathetic", "Indifferent", "Ambivalent"]
+        Emotion.neutral : ["Content", "Bored", "Apathetic", "Indifferent", "Ambivalent"]
     ]
     
     var selectedEmotion : Emotion = Emotion.notset
