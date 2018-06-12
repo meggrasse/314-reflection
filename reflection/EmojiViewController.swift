@@ -28,7 +28,6 @@ class EmojiViewController: UIViewController {
     // TODO: figure out why never called
     @IBAction func emojiSadTapped(_ sender: Any) {
         selectedEmotion = Emotion.sad
-        print (selectedEmotion)
         destinationBackgroundColor = UIColor.init(red: 116 / 255.0, green: 185 / 255.0, blue: 255 / 255.0, alpha: 1)
     }
     

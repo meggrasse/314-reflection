@@ -88,7 +88,11 @@ class EmotionViewController: UIViewController, UITextFieldDelegate {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
         if let viewController = segue.destination as? DiaryViewController {
+            viewController.selectedEmotion = self.selectedEmotion
             viewController.view.backgroundColor = self.view.backgroundColor
+            viewController.entry = entry
+        }
+        if let viewController = segue.destination as? EmojiViewController {
             viewController.entry = entry
         }
     }

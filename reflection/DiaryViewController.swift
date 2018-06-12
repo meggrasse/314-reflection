@@ -12,6 +12,7 @@ class DiaryViewController: UIViewController {
     
     @IBOutlet weak var entryBox: UITextView!
     
+    var selectedEmotion : Emotion = Emotion.notset
     var entry : String = ""
 
     override func viewDidLoad() {
@@ -35,8 +36,11 @@ class DiaryViewController: UIViewController {
         if let viewController = segue.destination as? EmojiViewController {
             viewController.entry = entryBox.text
         }
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if let viewController = segue.destination as? EmotionViewController {
+            viewController.selectedEmotion = self.selectedEmotion
+            viewController.view.backgroundColor = self.view.backgroundColor
+            viewController.entry = entryBox.text
+        }
     }
 
 }

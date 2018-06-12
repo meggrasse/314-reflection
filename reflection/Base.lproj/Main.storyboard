@@ -96,19 +96,6 @@
                                     <action selector="populateCurrentEmotionLabel:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zBb-uz-T1j"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n0i-W8-FK7">
-                                <rect key="frame" x="143" y="199" width="89" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="Pick up to 3">
-                                        <attributes>
-                                            <color key="NSColor" name="knobColor" catalog="System" colorSpace="catalog"/>
-                                            <font key="NSFont" size="15" name=".SFNSText"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jAY-Y2-WKl">
                                 <rect key="frame" x="251" y="405" width="120" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -571,8 +558,9 @@
         <image name="may30" width="2308" height="4096"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="oge-Cf-RsK"/>
         <segue reference="rTF-62-3lM"/>
-        <segue reference="Zb9-qL-DuQ"/>
+        <segue reference="7ac-3C-LE0"/>
         <segue reference="fWl-B6-3fl"/>
         <segue reference="wvA-77-gVO"/>
     </inferredMetricsTieBreakers>
