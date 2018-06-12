@@ -8,7 +8,7 @@
 
 import UIKit
 
-class EmotionViewController: UIViewController {
+class EmotionViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var button1: UIButton!
     @IBOutlet weak var button2: UIButton!
@@ -16,8 +16,8 @@ class EmotionViewController: UIViewController {
     @IBOutlet weak var button4: UIButton!
     @IBOutlet weak var button5: UIButton!
     
-    @IBOutlet weak var currentEmotionLabel: UILabel!
     @IBOutlet weak var nextButton: UIButton!
+    @IBOutlet weak var currentEmotionTextField: UITextField!
     
     let emotionDict = [
         Emotion.happy : ["Excited", "Playful", "Confident", "Peaceful", "Energetic"],
@@ -38,6 +38,11 @@ class EmotionViewController: UIViewController {
         if let emotions = emotionDict[selectedEmotion] {
             populateButtonText(emotions, emotionButtons)
         }
+        
+        currentEmotionTextField.delegate = self
+        currentEmotionTextField.isUserInteractionEnabled = false
+        currentEmotionTextField.clearsOnBeginEditing = true
+        currentEmotionTextField.returnKeyType = UIReturnKeyType.done
 
         // Do any additional setup after loading the view.
     }
@@ -52,14 +57,28 @@ class EmotionViewController: UIViewController {
             buttons[i]?.setTitle(emotions[i], for: UIControlState.normal)
         }
     }
+    @IBAction func otherButtonTapped(_ sender: Any) {
+        currentEmotionTextField.isUserInteractionEnabled = true
+        currentEmotionTextField.becomeFirstResponder()
+        if nextButton.titleLabel?.text == nil {
+            nextButton.setTitle("⇨", for: UIControlState.normal)
+        }
+    }
     
     //not the best name since there is a side effect
     @IBAction func populateCurrentEmotionLabel(_ sender: Any) {
-        currentEmotionLabel.text = (sender as? UIButton)?.titleLabel?.text
+        currentEmotionTextField.isUserInteractionEnabled = false
+        currentEmotionTextField.text = (sender as? UIButton)?.titleLabel?.text
         // 🤔
         if nextButton.titleLabel?.text == nil {
             nextButton.setTitle("⇨", for: UIControlState.normal)
         }
+    }
+    
+    // MARK: - UITextFieldDelegate
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        currentEmotionTextField.resignFirstResponder()
+        return true
     }
     
     // MARK: - Navigation

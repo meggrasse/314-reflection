@@ -19,8 +19,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Today I felt..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gg8-Cv-m7b">
-                                <rect key="frame" x="138" y="167" width="98" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="132.5" y="167" width="110" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -35,7 +35,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uo1-Q3-hy0">
-                                <rect key="frame" x="65" y="405" width="120" height="50"/>
+                                <rect key="frame" x="4" y="405" width="120" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" backgroundImage="button">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -45,7 +45,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0eS-IA-mfG">
-                                <rect key="frame" x="189" y="405" width="120" height="50"/>
+                                <rect key="frame" x="128" y="405" width="120" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" backgroundImage="button">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -54,13 +54,6 @@
                                     <action selector="populateCurrentEmotionLabel:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gwg-fr-s3s"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3xH-eM-3B3">
-                                <rect key="frame" x="0.0" y="241" width="375" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I51-6S-2nx">
                                 <rect key="frame" x="0.0" y="531" width="375" height="51"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -103,6 +96,36 @@
                                     <action selector="populateCurrentEmotionLabel:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zBb-uz-T1j"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n0i-W8-FK7">
+                                <rect key="frame" x="143" y="199" width="89" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Pick up to 3">
+                                        <attributes>
+                                            <color key="NSColor" name="knobColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="15" name=".SFNSText"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jAY-Y2-WKl">
+                                <rect key="frame" x="251" y="405" width="120" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Other" backgroundImage="button">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="otherButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Yfu-ki-goU"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2sO-h0-KPU">
+                                <rect key="frame" x="0.0" y="247" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -117,7 +140,7 @@
                         <outlet property="button3" destination="dny-S1-k5i" id="NtF-ue-OdK"/>
                         <outlet property="button4" destination="uo1-Q3-hy0" id="ZWD-bR-99D"/>
                         <outlet property="button5" destination="0eS-IA-mfG" id="LNV-65-A9F"/>
-                        <outlet property="currentEmotionLabel" destination="3xH-eM-3B3" id="GbX-ll-zhi"/>
+                        <outlet property="currentEmotionTextField" destination="2sO-h0-KPU" id="c4w-CE-Leh"/>
                         <outlet property="nextButton" destination="I51-6S-2nx" id="yPi-MZ-v1U"/>
                     </connections>
                 </viewController>
@@ -288,7 +311,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EnG-St-tK9">
-                                <rect key="frame" x="16" y="20" width="30" height="36"/>
+                                <rect key="frame" x="0.0" y="7" width="30" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="⇦">
@@ -306,7 +329,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ERy-AW-wGb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-801" y="34"/>
+            <point key="canvasLocation" x="-802.39999999999998" y="33.733133433283363"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="GCX-P0-C9C">
@@ -388,9 +411,9 @@
         <image name="home" width="1151" height="2048"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="WDZ-s1-PdQ"/>
-        <segue reference="nta-Zr-XFY"/>
-        <segue reference="fWl-B6-3fl"/>
-        <segue reference="25t-XG-Uby"/>
+        <segue reference="fxD-to-LgW"/>
+        <segue reference="7ac-3C-LE0"/>
+        <segue reference="bsJ-rR-F9z"/>
+        <segue reference="g16-Kv-OP5"/>
     </inferredMetricsTieBreakers>
 </document>
